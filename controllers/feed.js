@@ -116,7 +116,7 @@ exports.updatePost = (req, res, next) => {
     .then((post) => {
       if (!post) {
         const error = new Error("Could not find post.");
-        error.statusCode = 422;
+        error.statusCode = 404;
         throw error;
       }
 
@@ -151,7 +151,7 @@ exports.deletePost = (req, res, next) => {
     .then((post) => {
       if (!post) {
         const error = new Error("Could not find post.");
-        error.statusCode = 422;
+        error.statusCode = 404;
         throw error;
       }
 
