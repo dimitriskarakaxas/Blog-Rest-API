@@ -57,6 +57,3 @@ mongoose
     });
   })
   .catch((err) => console.log(err));
-
-// Protect actions from unauthorized users
-// Clear relationships in database after deleting a post
